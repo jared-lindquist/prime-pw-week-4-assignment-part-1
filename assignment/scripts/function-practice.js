@@ -65,22 +65,23 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 
 function getLast( array ) {
-  array = [0, 9, 4, 6];
-  if ((array.length) > 0) {
-    console.log(array.slice(-1));
-  } else {
-    console.log(undefined);
-  }
+  array = [0, 9, 4, 6, 12];
+  return array.slice(-1);
 }
-getLast();
+console.log(getLast());
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-function find( value, array ){
-  
-}
+const value = 5;
+let array1 = [2, 3, 4, 5, 10, 20, 34];
+
+let result = array1.some(function(value){
+    return (value === 5);
+})
+
+console.log(result);
 
 // ----------------------
 // Stretch Goals
