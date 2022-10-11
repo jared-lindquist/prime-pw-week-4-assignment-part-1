@@ -15,47 +15,69 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return;
+  return 'Hello Jared!';
 }
 // Remember to call the function to test
-
+console.log(helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
+function addNumbers(firstNumber, secondNumber) {
+   firstNumber = 3;
+   secondNumber = 8; 
+  return (firstNumber + secondNumber)
 }
+console.log(addNumbers());
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(num1, num2, num3 ){
+num1 = 2;
+num2 = 5;
+num3 = 4;
+return (num1 * num2 * num3);
 }
-
+console.log(multiplyThree());
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+  else return false;
 }
+console.log(isPositive());
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
+
+isPositive(3);
 console.log( 'isPositive - should say true', isPositive(3) );
+
+isPositive(0);
 console.log( 'isPositive - should say false', isPositive(0) );
+
+isPositive(-3);
 console.log( 'isPositive - should say false', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
+
+function getLast( array ) {
+  array = [0, 9, 4, 6];
+  if ((array.length) > 0) {
+    console.log(array.slice(-1));
+  } else {
+    console.log(undefined);
+  }
 }
+getLast();
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 function find( value, array ){
   
 }
