@@ -75,7 +75,7 @@ console.log(getLast());
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
 const value = 5;
-let array1 = [2, 3, 4, 5, 10, 20, 34];
+let array1 = [2, 3, 4, 6, 10, 20, 34];
 
 let result = array1.some(function(value){
     return (value === 5);
@@ -88,11 +88,19 @@ console.log(result);
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
 
+let letter = 'a';
+let string = 'apple';
+
+function isFirstLetter(letter, string) {
+    if  (string.charAt() === letter) {
+        return true;
+  } else {
+    return false;
+  }
 }
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+  console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+  console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
