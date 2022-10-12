@@ -132,3 +132,17 @@ console.log(getPositives(array3));
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// I found one on CodeWars called 'Simple Multiplication'.
+// This problem is about writing a function for  a given number 
+// by eight if it is an even number, and by nine if it is an odd number.
+//
+//
+
+function simpleMultiplication(n) {
+  return n * (n % 2 ? 9 : 8);
+}
+console.log(simpleMultiplication(2));
+console.log(simpleMultiplication(5));
+console.log(simpleMultiplication(75));
+console.log(simpleMultiplication(12));
