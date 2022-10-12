@@ -40,6 +40,8 @@ console.log(multiplyThree());
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+
+
 function isPositive( number ) {
   if ( number > 0 ){
     return true;
@@ -65,7 +67,7 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 
 function getLast( array ) {
-  array = [0, 9, 4, 6, 12];
+  if (array = [0, 9, 4, 6, 12]);
   return array.slice(-1);
 }
 console.log(getLast());
@@ -93,6 +95,7 @@ let letter = 'a';
 let string = 'apple';
 
 function isFirstLetter(letter, string) {
+    console.log('in isFirstLetter')
     if  (string.charAt() === letter) {
         return true;
   } else {
