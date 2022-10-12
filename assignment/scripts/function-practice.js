@@ -121,7 +121,13 @@ console.log(sumAll());
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+let array3 = [-6, 3, 5, -27, 98, -64, 30, 72]
 
+function getPositives(array3){
+  const posArr = array3.filter(num => num > -1);
+  return posArr;
+}
+console.log(getPositives(array3));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
