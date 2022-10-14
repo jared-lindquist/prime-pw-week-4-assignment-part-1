@@ -66,11 +66,13 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 //    array is empty, return `undefined`.
 
 
-function getLast( array ) {
-  if (array = [0, 9, 4, 6, 12]);
-  return array.slice(-1);
+let array = [0, 9, 4, 6, 12]
+
+function getLast() {
+let f = array[array.length-1];
+console.log("The last element is " + f);
 }
-console.log(getLast());
+getLast();
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
