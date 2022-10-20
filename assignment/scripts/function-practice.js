@@ -15,28 +15,25 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'Hello Jared!';
+  return 'Hello ' + name;
 }
 // Remember to call the function to test
-console.log(helloName());
+console.log(helloName("Jared"));
 
 // 3. Function to add two numbers together & return the result
+
 function addNumbers(firstNumber, secondNumber) {
-   firstNumber = 3;
-   secondNumber = 8; 
+  
   return (firstNumber + secondNumber)
 }
-console.log(addNumbers());
+console.log(addNumbers(3, 8));
 
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1, num2, num3 ){
-num1 = 2;
-num2 = 5;
-num3 = 4;
 return (num1 * num2 * num3);
 }
-console.log(multiplyThree());
+console.log(multiplyThree(3, 4, 5));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -48,7 +45,7 @@ function isPositive( number ) {
   }
   else return false;
 }
-console.log(isPositive());
+console.log(isPositive(7));
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
@@ -68,11 +65,11 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 let array = [0, 9, 4, 6, 12]
 
-function getLast() {
-let f = array[array.length-1];
+function getLast(anything) {
+let f = anything[anything.length-1];
 console.log("The last element is " + f);
 }
-getLast();
+getLast(array);
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -111,14 +108,14 @@ function isFirstLetter(letter, string) {
 
 let array2 = [ 7, 5, 90, 63, -27]
 
-function sumAll( ) {
+function sumAll(something) {
   let sum = 0
-  for (i = 0; i < array2.length; ++i) {
-    sum += array2[i]; 
+  for (i = 0; i < something.length; ++i) {
+    sum += something[i]; 
 }
 return sum;
 }
-console.log(sumAll());
+console.log(sumAll(array2));
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
@@ -136,7 +133,7 @@ console.log(getPositives(array3));
 //     here in a comment, write the function, and test it!
 
 // I found one on CodeWars called 'Simple Multiplication'.
-// This problem is about writing a function for  a given number 
+// This problem is about writing a function for multiplying a given number 
 // by eight if it is an even number, and by nine if it is an odd number.
 //
 //
